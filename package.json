@@ -1,6 +1,9 @@
 {
   "name": "open-source-rpg-app",
   "version": "0.1.0",
+  "engines": {
+    "node": "16.x"
+  }
   "private": true,
   "scripts": {
     "dev": "node src/server.js",
@@ -8,9 +11,6 @@
     "start": "node src/server.js",
     "lint": "next lint",
     "heroku-postbuild": "npx prisma migrate deploy && next build"
-  "engines": {
-    "node": "16.x"
-  }
   },
   "prisma": {
     "schema": "src/prisma/schema.prisma"
